@@ -1,8 +1,8 @@
 //import { stringify } from 'querystring';
 import React from "react";
 import babyNamesData from "./babyNamesData.json";
-import sortArrayAl from "./components/sortArrayA";
 import sortArrayB from "./components/sortArrayB";
+import './App.css';
 
 interface babyNamesData {
   id: number;
@@ -18,7 +18,7 @@ function App(): JSX.Element {
   //console.log(sortArrayB(babyNamesData))
   return (
     <div className="App">
-      <h3>Welcome to Mistys Baby Name App</h3>
+      <h3>Welcome to Mistura's Baby Name App</h3>
       There are {babyNamesData.length} names.
       <div className="mainList">
         {sortArrayB(babyNamesData).map(makeBabyNameElement)}
