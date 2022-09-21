@@ -1,5 +1,6 @@
 .babyNamef {
     border: 4px solid aquamarine;
+    background-color: aquamarine;
     border-radius: 20px 20px 20px 20px;
     font-weight: bold !important;
     padding: 5px;
@@ -7,8 +8,9 @@
 
   }
 
-  .babyNamem {
+.babyNamem {
     border: 4px solid #8f9fcc;
+    background-color: #8f9fcc;
     border-radius: 20px 20px 20px 20px;
     font-weight: bold !important;
     padding: 5px;
@@ -16,13 +18,38 @@
 
   }
 
-  .App {
+.App {
     text-align: center;
   }
 
-  .mainList {
+.mainList {
     padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+.global-header {
+  position: relative;
+  z-index: 3;
+  max-width: 1500px;
+  width: 100%;
+  margin: 8px auto;
+  }
+
+.search-bar {
+    position: absolute;
+    padding-left: 10px;
+}
+
+/* .links {
+    display: inline;
+    padding-right: 30px;
+} */
+
+#Home li{
+    padding-right: 30px !important;
+    display: inline;
+}
+
+
