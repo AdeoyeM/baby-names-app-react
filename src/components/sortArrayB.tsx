@@ -1,3 +1,5 @@
+import { isObjectBindingPattern } from "typescript";
+
 interface babyNameData {
     id: number;
     name: string;
@@ -8,9 +10,10 @@ interface babyNameData {
   
   function sortTwoObjects(objA: babyNameData, objb: babyNameData) {
     number++;
-    console.log(number);
+    //console.log(number);
+    console.log(objA.name )
   
-    return objA.name > objb.name ? 1 : 0;
+    return objA.name < objb.name ? 1 : 0;
   
     // if (objA.name > objb.name){
     //   return 1;
@@ -23,7 +26,9 @@ interface babyNameData {
   //return objA.name > objB.name ? 1 ; 0 (ternery) //give it a boolean statement and respond if its true or false
   
   function sortArrayB(arr: babyNameData[]): babyNameData[] {
-    return arr.sort(sortTwoObjects);
+    const arr2 = [...arr].sort(sortTwoObjects)
+    console.log(arr2)
+    return arr2;
   
     //sort will have a default rule, but you can give it new rules
     //sort will take two random things from the array and compare them
